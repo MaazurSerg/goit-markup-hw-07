@@ -1,0 +1,48 @@
+/*Чем занимаемся */
+.job {
+  padding-bottom: 94px;
+}
+
+.job-title {
+  width: 376px;
+  height: 42px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--secondary-title-color);
+}
+
+.job-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.job-item {
+  display: block;
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.job-text {
+  display: flex;
+  width: 370px;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+  background: rgba(47, 48, 58, 0.8);
+
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
