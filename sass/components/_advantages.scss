@@ -5,12 +5,12 @@
   padding-bottom: 94px;
 }
 
-.content-container {
+.content__container {
   width: 1200px;
   margin: 0 auto;
 }
 
-.content-item-svg {
+.content-list__item-svg {
   display: flex;
   width: 270px;
   height: 120px;
@@ -22,12 +22,12 @@
   background-color: var(--secondary-background);
 }
 
-.content-icon {
+.content-list__icon {
   width: 70px;
   height: 70px;
 }
 
-.content-item:not(:last-child) {
+.content-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -35,7 +35,7 @@
   display: flex;
 }
 
-.content-text {
+.content-list__text {
   width: 270px;
   height: 75px;
 
@@ -46,7 +46,7 @@
   color: var(--secondary-text-color);
 }
 
-.content-title {
+.content-list__title {
   width: 270px;
   height: 16px;
   margin-bottom: 10px;

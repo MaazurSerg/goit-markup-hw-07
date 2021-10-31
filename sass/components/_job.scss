@@ -3,7 +3,7 @@
   padding-bottom: 94px;
 }
 
-.job-title {
+.job__title {
   width: 376px;
   height: 42px;
   margin: 0 auto;
@@ -19,7 +19,7 @@
   margin-top: 50px;
 }
 
-.job-item {
+.job-list__item {
   display: block;
   position: relative;
   &:not(:last-child) {
@@ -27,7 +27,7 @@
   }
 }
 
-.job-text {
+.job-list__text {
   display: flex;
   width: 370px;
   height: 70px;

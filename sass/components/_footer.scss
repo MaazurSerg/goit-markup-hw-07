@@ -15,7 +15,7 @@
   margin-right: 70px;
 }
 
-.footer-link {
+.footer-list__link {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
@@ -27,7 +27,7 @@
   }
 }
 
-.footer-text {
+.footer-left__text {
   margin-bottom: 9px;
 
   font-size: 14px;
@@ -36,11 +36,11 @@
   color: var(--primary-title-color);
 }
 
-.footer-item {
+.footer-list__item {
   margin-bottom: 9px;
 }
 
-.footer-logo {
+.footer-left__logo {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -50,7 +50,7 @@
   color: var(--third-text-color);
 }
 
-.footer-logo-span {
+.footer-left__logo-span {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -59,7 +59,7 @@
   color: var(--primary-title-color);
 }
 
-.address {
+.footer-left__address {
   font-style: normal;
 }
 
@@ -79,12 +79,12 @@
   color: var(--primary-title-color);
 }
 
-.footer-list-item {
+.footer-social-list {
   display: flex;
   justify-content: center;
 }
 
-.footer-social-item {
+.footer-social-list__social-item {
   width: 44px;
   height: 44px;
   & + & {
@@ -92,7 +92,7 @@
   }
 }
 
-.footer-social-link {
+.footer-social-list__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -127,7 +127,7 @@
   display: flex;
 }
 
-.form-footer-input {
+.form-footer__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -146,7 +146,7 @@
   }
 }
 
-.footer-btn {
+.form-footer__btn {
   position: relative;
   display: flex;
   width: 200px;
@@ -169,7 +169,7 @@
   }
 }
 
-.form-footer-input {
+.form-footer__input {
   color: #ffffff;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

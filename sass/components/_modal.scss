@@ -27,18 +27,7 @@
   box-shadow: var(--card-portfolio-shadow);
 }
 
-.modal-icon {
-  display: block;
-  width: 18px;
-  height: 18px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    fill: var(--third-background);
-  }
-}
-
-.close-btn {
+.modal__close-btn {
   display: flex;
   position: absolute;
   right: 8px;
@@ -57,7 +46,18 @@
   }
 }
 
-.modal-title {
+.modal__icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--third-background);
+  }
+}
+
+.modal__title {
   margin-bottom: 12px;
   display: flex;
   justify-content: center;
@@ -68,7 +68,7 @@
   letter-spacing: 0.03em;
 }
 
-.form-modal-field {
+.form-modal__field {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -77,7 +77,7 @@
   }
 }
 
-.form-modal-label {
+.form-modal__label {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -86,7 +86,7 @@
   color: var(--secondary-text-color);
 }
 
-.form-modal-input {
+.form-modal__input {
   width: 100%;
   height: 40px;
   padding: 11px 42px;
@@ -106,13 +106,13 @@
   left: 12px;
   bottom: 11px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .form-modal-input + &,
-  .form-modal-input + & {
+  .form-modal__input:focus + &,
+  .form-modal__input:hover + & {
     fill: var(--third-background);
   }
 }
 
-.textarea-comment {
+.form-modal__textarea-comment {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -134,7 +134,7 @@
   }
 }
 
-.label-checkbox {
+.form-modal__label-checkbox {
   display: flex;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -148,7 +148,7 @@
   color: var(--secondary-text-color);
 }
 
-.label-checkbox span {
+.form-modal__label-checkbox span {
   display: flex;
   width: 16px;
   height: 15px;
@@ -163,17 +163,17 @@
   &:hover {
     border: 2px solid var(--third-text-color);
   }
-  .checkbox:checked + & {
+  .form-modal__checkbox:checked + & {
     background-color: var(--third-background);
     border: none;
   }
 }
 
-.contract-link {
+.form-modal__contract-link {
   color: var(--third-text-color);
 }
 
-.send-btn {
+.form-modal__send-btn {
   display: flex;
   width: 200px;
   height: 50px;
