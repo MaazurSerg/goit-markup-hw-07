@@ -809,17 +809,6 @@ body {
   box-shadow: var(--card-portfolio-shadow);
 }
 
-.modal__icon {
-  display: block;
-  width: 18px;
-  height: 18px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__icon:hover, .modal__icon:focus {
-  fill: var(--third-background);
-}
-
 .modal__close-btn {
   display: flex;
   position: absolute;
@@ -835,8 +824,19 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close-btn:focus, .modal__close-btn:hover {
+.modal__close-btn:hover, .modal__close-btn:focus {
   border: 1px solid var(--third-text-color);
+}
+
+.modal__icon {
+  width: 30px;
+  height: 30px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__close-btn:focus .modal__icon,
+.modal__close-btn:hover .modal__icon {
+  fill: var(--third-background);
 }
 
 .modal__title {
